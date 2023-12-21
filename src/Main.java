@@ -6,7 +6,7 @@ public class Main {
         while (stop != 1) {
             System.out.println("----------------- Simple Calculator Application -----------------");
             System.out.println(
-                    "1. Addition\n" +
+                            "1. Addition\n" +
                             "2. Subtraction\n" +
                             "3. Multiplication\n" +
                             "4. Division\n" +
@@ -14,46 +14,29 @@ public class Main {
             );
             int choice;
             LoopForContinue loopForContinueObj = new LoopForContinue();
-            float firstNumber, secondNumber;
             Scanner calculatorScanner = new Scanner(System.in);
             System.out.print("Enter your choice : ");
             choice = calculatorScanner.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.print("Enter first number: ");
-                    firstNumber = calculatorScanner.nextFloat();
-                    System.out.print("Enter second number: ");
-                    secondNumber = calculatorScanner.nextFloat();
                     Addition additionObj = new Addition();
-                    additionObj.additionCalculator(firstNumber, secondNumber);
+                    additionObj.additionCalculator();
                     stop = loopForContinueObj.loopForContinue();
                     break;
                 case 2:
-                    System.out.print("Enter first number: ");
-                    firstNumber = calculatorScanner.nextFloat();
-                    System.out.print("Enter second number: ");
-                    secondNumber = calculatorScanner.nextFloat();
                     Subtraction subtractionObj = new Subtraction();
-                    subtractionObj.subtractionCalculator(firstNumber, secondNumber);
+                    subtractionObj.subtractionCalculator();
                     stop = loopForContinueObj.loopForContinue();
 
                     break;
                 case 3:
-                    System.out.print("Enter first number: ");
-                    firstNumber = calculatorScanner.nextFloat();
-                    System.out.print("Enter second number: ");
-                    secondNumber = calculatorScanner.nextFloat();
                     Multiplication multiplicationObj = new Multiplication();
-                    multiplicationObj.multiplicationCalculator(firstNumber, secondNumber);
+                    multiplicationObj.multiplicationCalculator();
                     stop = loopForContinueObj.loopForContinue();
                     break;
                 case 4:
-                    System.out.print("Enter first number: ");
-                    firstNumber = calculatorScanner.nextFloat();
-                    System.out.print("Enter second number: ");
-                    secondNumber = calculatorScanner.nextFloat();
                     Division divisionObj = new Division();
-                    divisionObj.divisionCalculator(firstNumber, secondNumber);
+                    divisionObj.divisionCalculator();
                     stop = loopForContinueObj.loopForContinue();
                     break;
                 case 5:

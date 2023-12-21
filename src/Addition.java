@@ -1,9 +1,13 @@
+import java.util.Scanner;
+
 public class Addition {
-    void additionCalculator(float firstNumber,float secondNumber){
-        try {
-            System.out.println("Result: "+ (firstNumber+secondNumber));
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+    void additionCalculator(){
+        float firstNumber,secondNumber;
+        Scanner additionScanner = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        firstNumber = additionScanner.nextFloat();
+        System.out.print("Enter second number: ");
+        secondNumber = additionScanner.nextFloat();
+        System.out.println("Result: "+ (firstNumber+secondNumber));
     }
 }
